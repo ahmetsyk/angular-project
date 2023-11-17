@@ -1,3 +1,4 @@
 <router-outlet>
-  <app-home></app-home>
+  <input type="text" [(ngModel)]="name" >
+  <app-home [title]="title" [pageName]="pageName" [name]="name"></app-home>
 </router-outlet>
